@@ -2,7 +2,7 @@
   "name": "zoids_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MGM103.github.io/zoids_app",
+  "homepage": "https://mgm103.github.io/Zoids_Wiki/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
