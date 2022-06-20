@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/zoids_app/static/css/main.073c9b0a.css",
-    "main.js": "/zoids_app/static/js/main.e11344bd.js",
-    "static/js/787.86330bd1.chunk.js": "/zoids_app/static/js/787.86330bd1.chunk.js",
-    "static/media/logo.svg": "/zoids_app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/zoids_app/index.html",
-    "main.073c9b0a.css.map": "/zoids_app/static/css/main.073c9b0a.css.map",
-    "main.e11344bd.js.map": "/zoids_app/static/js/main.e11344bd.js.map",
-    "787.86330bd1.chunk.js.map": "/zoids_app/static/js/787.86330bd1.chunk.js.map"
+    "main.css": "/Zoids_Wiki/static/css/main.073c9b0a.css",
+    "main.js": "/Zoids_Wiki/static/js/main.c08647fe.js",
+    "static/js/787.86330bd1.chunk.js": "/Zoids_Wiki/static/js/787.86330bd1.chunk.js",
+    "static/media/logo.svg": "/Zoids_Wiki/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Zoids_Wiki/index.html",
+    "main.073c9b0a.css.map": "/Zoids_Wiki/static/css/main.073c9b0a.css.map",
+    "main.c08647fe.js.map": "/Zoids_Wiki/static/js/main.c08647fe.js.map",
+    "787.86330bd1.chunk.js.map": "/Zoids_Wiki/static/js/787.86330bd1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e11344bd.js"
+    "static/js/main.c08647fe.js"
   ]
 }
