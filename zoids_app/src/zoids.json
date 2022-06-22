@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Liger Zero",
+        "type": "Liger",
+        "height": "8.3m",
+        "length": "24m",
+        "weight": "85 tons",
+        "max_speed": "307 km/h",
+        "weapons": [
+            "Laser Fang",
+            "Strike Laser Claws",
+            "Double Barreled Shock Cannon"
+        ],
+        "equipment": [
+            "Charging Armour System",
+            "Ion Turbo Booster Unit",
+            "Downforce Stabilizers"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Berserker Fury",
+        "type": "Tyrannosaurus",
+        "height": "12.3m",
+        "length": "22.7m",
+        "weight": "127 tons",
+        "max_speed": "340 km/h",
+        "weapons": [
+            "Buster Claw",
+            "Electron Fang",
+            "Charged Particle Cannon",
+            "AZ Beam Cannon"
+        ],
+        "equipment": [
+            "E-Shield Generator",
+            "Ion Booster Pack"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Blitz Tiger",
+        "type": "Tiger",
+        "height": "14.0m",
+        "length": "26.0m",
+        "weight": "125 tons",
+        "max_speed": "320 km/h",
+        "weapons": [
+            "Crusher Sabre",
+            "Thunder Claw",
+            "Bolt Cannon",
+            "Energy Blades"
+        ],
+        "equipment": [
+            "Booster Unit"
+        ]
+    }
+]
