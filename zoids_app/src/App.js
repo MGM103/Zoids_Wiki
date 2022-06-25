@@ -1,36 +1,16 @@
-import React from 'react';
-import PropTypes from "prop-types";
-import './App.css';
+import React, {useState} from 'react';
 
+import './App.css';
 import zoids from "./zoids.json";
 
-const WikiRow = ({zoids}) => (
-  <tr>
-    <td>{zoids.name}</td>
-    <td>{zoids.type}</td>
-    <td>{zoids.height}</td>
-    <td>{zoids.length}</td>
-    <td>{zoids.weight}</td>
-    <td>{zoids.max_speed}</td>
-    <td>{zoids.weapons.join(", ")}</td>
-    <td>{zoids.equipment.join(", ")}</td>
-  </tr>
-);
-
-WikiRow.propTypes = {
-  zoids: PropTypes.shape({
-    name: PropTypes.string,
-    type: PropTypes.string,
-    height: PropTypes.string,
-    length: PropTypes.string,
-    weight: PropTypes.string,
-    max_speed: PropTypes.string,
-    weapons: PropTypes.arrayOf(PropTypes.string),
-    equipment: PropTypes.arrayOf(PropTypes.string)
-  })
-};
+// components
+import WikiRow from './components/WikiRow';
+import ZoidInfo from './components/ZoidInfo'
 
 function App() {
+  const [search, setSearch] = useState("");
+  const [selectedZoid, setSelectedZoid] = useState(null);
+
   return (
     <div style={{
       margin: 'auto',
@@ -38,25 +18,36 @@ function App() {
       paddingTop: "1rem",
     }}>
         <h1 className="title"> Zoids Wiki</h1>
-        <table>
-          <thead>
-            <tr>
-              <th> Name </th>
-              <th> Type </th>
-              <th> Height </th>
-              <th> Length </th>
-              <th> Weight </th>
-              <th> Max Speed </th>
-              <th> Weapons </th>
-              <th> Equipment </th>
-            </tr>
-          </thead>
-          <tbody>
-            {zoids.map((zoids) => (
-              <WikiRow zoids={zoids} key={zoids.id} />
-            ))}
-          </tbody>
-        </table>
+        <div style={{
+          display: 'grid',
+          gridColumnGap: "1rem"
+        }}>
+          <div>
+            <input 
+              value={search}
+              onChange={(evnt) => setSearch(evnt.target.value)}
+            />
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th> Name </th>
+                  <th> Type </th>
+                  <th> Max Speed </th>
+                  <th> Weapons </th>
+                </tr>
+              </thead>
+              <tbody>
+                {zoids
+                  .filter((zoids) => zoids.name.toLowerCase().includes(search.toLowerCase()))
+                  .map((zoids) => (
+                    <WikiRow zoids={zoids} key={zoids.id} onSelect={() => setSelectedZoid(zoids)} />
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+          {selectedZoid && <ZoidInfo {...selectedZoid} />}
+        </div>
     </div>
   );
 }
