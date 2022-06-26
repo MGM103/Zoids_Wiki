@@ -10,7 +10,7 @@
             "size": "L",
             "length": "15.6m",
             "weight": "78.0t",
-            "max_speed": "200 km/h"
+            "max speed": "200 km/h"
         },
         "build_info":{
             "base zoid": "N/A",
@@ -80,7 +80,7 @@
             "size": "L",
             "length": "15.6m",
             "weight": "78.0t",
-            "max_speed": "240 km/h"
+            "max speed": "240 km/h"
         }, 
         "build_info":{
             "base zoid": "Zaber Fang Old",
@@ -150,7 +150,7 @@
             "size": "L",
             "length": "15.8m",
             "weight": "90.0t",
-            "max_speed": "250 km/h"
+            "max speed": "250 km/h"
         },
         "build_info":{
             "base zoid": "Zaber Fang",
@@ -213,7 +213,7 @@
             "size": "L",
             "length": "15.8m",
             "weight": "90.0t",
-            "max_speed": "250 km/h"
+            "max speed": "250 km/h"
         },
         "build_info":{
             "base zoid": "Zaber Fang",
@@ -276,7 +276,7 @@
             "size": "L",
             "length": "15.6m",
             "weight": "75.0t",
-            "max_speed": "245 km/h"
+            "max speed": "245 km/h"
         },
         "build_info":{
             "base zoid": "Zaber Fang",
@@ -346,7 +346,7 @@
             "size": "S",
             "length": "13.2m",
             "weight": "24.0t",
-            "max_speed": "190 km/h"
+            "max speed": "190 km/h"
         },
         "build_info":{
             "base zoid": "N/A",
@@ -408,7 +408,7 @@
             "size": "L",
             "length": "24.0m",
             "weight": "85.0t",
-            "max_speed": "307 km/h"
+            "max speed": "307 km/h"
         },
         "build_info": {
             "base zoid": "N/A",
@@ -470,7 +470,7 @@
             "size": "L",
             "length": "24.1m",
             "weight": "132.0t",
-            "max_speed": "330 km/h"
+            "max speed": "330 km/h"
         },
         "build_info": {
             "base zoid": "Liger Zero",
@@ -539,7 +539,7 @@
             "size": "L",
             "length": "24.1m",
             "weight": "135.0t",
-            "max_speed": "310 km/h"
+            "max speed": "310 km/h"
         },
         "build_info": {
             "base zoid": "Liger Zero",
@@ -608,7 +608,7 @@
             "size": "L",
             "length": "23.3m",
             "weight": "145.0t",
-            "max_speed": "285 km/h"
+            "max speed": "285 km/h"
         },
         "build_info": {
             "base zoid": "Liger Zero",
@@ -678,7 +678,7 @@
             "size": "L",
             "length": "22.7m",
             "weight": "127.0t",
-            "max_speed": "340 km/h"
+            "max speed": "340 km/h"
         },
         "build_info": {
             "base zoid": "N/A",
@@ -747,7 +747,7 @@
             "size": "L",
             "length": "22.7m",
             "weight": "134.0t",
-            "max_speed": "360 km/h"
+            "max speed": "360 km/h"
         },
         "build_info": {
             "base zoid": "Beserk Fury",
@@ -810,7 +810,7 @@
             "size": "L",
             "length": "22.7m",
             "weight": "156.0t",
-            "max_speed": "290 km/h"
+            "max speed": "290 km/h"
         },
         "build_info": {
             "base zoid": "Berserk Fury",
@@ -880,7 +880,7 @@
             "size": "L",
             "length": "22.7m",
             "weight": "125.0t",
-            "max_speed": "600 km/h"
+            "max speed": "600 km/h"
         },
         "build_info": {
             "base zoid": "Berserk Fury",
@@ -943,7 +943,7 @@
             "size": "M",
             "length": "17m",
             "weight": "36.0t",
-            "max_speed": "3430 km/h"
+            "max speed": "3430 km/h"
         },
         "build_info": {
             "base zoid": "N/A",

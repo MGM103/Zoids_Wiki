@@ -1,23 +1,26 @@
 import React from 'react';
 import PropTypes, { string } from "prop-types";
+import {TableContainer, Table, TableBody, TableRow, TableCell} from '@mui/material';
 
 const BuldInfo = ({build_info}) => (
     <div>
         <h3>Bulid Info</h3>
-        <table>
-            <tbody>
+        <TableContainer>
+            <Table>
+                <TableBody>
                 {Object.keys(build_info)
                     .map((key) => (
-                        <tr key={key}>
-                        <td>{key}</td>
-                        <td>
+                        <TableRow key={key}>
+                        <TableCell>{key}</TableCell>
+                        <TableCell>
                             {key === "parts" ? build_info[key].join(", ") : build_info[key]}
-                        </td>
-                        </tr>
+                        </TableCell>
+                        </TableRow>
                     ))
                 }
-            </tbody>
-        </table>
+                </TableBody>
+            </Table>
+        </TableContainer>
     </div>
 );
 

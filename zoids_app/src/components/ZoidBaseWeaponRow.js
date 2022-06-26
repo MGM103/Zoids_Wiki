@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import { TableRow, TableCell } from '@mui/material';
 
 const ZoidBaseWeaponRow = ({base_weapons}) => (
-        <tr>
-            <td>{base_weapons.name}</td>
-            <td>{base_weapons.AT}</td>
-            <td>{base_weapons.TG}</td>
-            <td>{base_weapons.EP}</td>
-        </tr>
+        <TableRow>
+            <TableCell>{base_weapons.name}</TableCell>
+            <TableCell>{base_weapons.AT}</TableCell>
+            <TableCell>{base_weapons.TG}</TableCell>
+            <TableCell>{base_weapons.EP}</TableCell>
+        </TableRow>
 )
 
 ZoidBaseWeaponRow.propType = {

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import {Button} from '@mui/material';
 
 const WikiRow = ({zoids, onSelect}) => (
     <tr>
@@ -8,7 +9,7 @@ const WikiRow = ({zoids, onSelect}) => (
       <td>{zoids.manufacturer}</td>
       <td>{zoids.description}</td>
       <td>
-        <button onClick={() => onSelect(zoids)}>Select</button>
+        <Button variant="outlined" onClick={() => onSelect(zoids)}>Select</Button>
       </td>
     </tr>
   );

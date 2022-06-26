@@ -1,22 +1,25 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import {TableContainer, Table, TableBody, TableRow, TableCell} from '@mui/material';
 
 const ZoidSpecs = ({specs}) => (
     <div>
         <h3>Specs</h3>
-        <table>
-            <tbody>
+        <TableContainer>
+            <Table>
+                <TableBody>
                 {Object.keys(specs)
                 .map(
                     (key) => (
-                    <tr key={key}>
-                        <td>{key}</td>
-                        <td>{specs[key]}</td>
-                    </tr>
+                    <TableRow key={key}>
+                        <TableCell>{key}</TableCell>
+                        <TableCell>{specs[key]}</TableCell>
+                    </TableRow>
                     )
                 )}
-            </tbody>
-        </table>
+                </TableBody>
+            </Table>
+        </TableContainer>
     </div>
 );
 
@@ -25,7 +28,7 @@ ZoidSpecs.propTypes = {
         size: PropTypes.string.isRequired,
         length: PropTypes.string.isRequired,
         weight: PropTypes.string.isRequired,
-        max_speed: PropTypes.string.isRequired
+        "max speed": PropTypes.string.isRequired
     })
 }
 

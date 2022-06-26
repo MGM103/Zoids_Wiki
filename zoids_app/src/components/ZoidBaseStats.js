@@ -1,22 +1,25 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import { TableContainer, Table, TableBody, TableRow, TableCell} from '@mui/material';
 
 const ZoidBaseStats = ({base_stats}) => (
     <div>
       <h3>Base Stats</h3>
-      <table>
-        <tbody>
-          {Object.keys(base_stats)
-            .map(
-            (key) => (
-                <tr key={key}>
-                  <td>{key}</td>
-                  <td>{base_stats[key]}</td>
-                </tr>
-            ))
-          }
-        </tbody>
-      </table>
+      <TableContainer sx={{paddingTop: 0.5}}>
+        <Table>
+          <TableBody>
+            {Object.keys(base_stats)
+              .map(
+              (key) => (
+                  <TableRow key={key}>
+                    <TableCell>{key}</TableCell>
+                    <TableCell>{base_stats[key]}</TableCell>
+                  </TableRow>
+              ))
+            }
+          </TableBody>
+        </Table>
+      </TableContainer>
     </div>
 );
 
