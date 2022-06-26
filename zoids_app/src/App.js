@@ -1,15 +1,23 @@
-import React, {useState} from 'react';
-
+import React, {useState, useEffect} from 'react';
 import './App.css';
-import zoids from "./zoids.json";
 
 // components
 import WikiRow from './components/WikiRow';
 import ZoidInfo from './components/ZoidInfo'
 
 function App() {
+  const [zoids, setZoids] = useState([]);
   const [search, setSearch] = useState("");
   const [selectedZoid, setSelectedZoid] = useState(null);
+
+  useEffect(() => {
+    console.log("Ran use Effect")
+
+    fetch("http://localhost:3000/Zoids_Wiki/zoids.json")
+      .then((response) => response.json())
+      .then((data) => setZoids(data))
+      .catch((error) => console.log(error));
+  }, []);
   
   return (
     <div style={{
