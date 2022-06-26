@@ -1,58 +1,931 @@
 [
     {
         "id": 1,
-        "name": "Liger Zero",
-        "type": "Liger",
-        "height": "8.3m",
-        "length": "24m",
-        "weight": "85 tons",
-        "max_speed": "307 km/h",
-        "weapons": [
-            "Laser Fang",
-            "Strike Laser Claws",
-            "Double Barreled Shock Cannon"
-        ],
-        "equipment": [
-            "Charging Armour System",
-            "Ion Turbo Booster Unit",
-            "Downforce Stabilizers"
+        "name": "Zaber Fang Old",
+        "manufacturer": "Imperial Force",
+        "type": "Tiger",
+        "description": "Old Zenebas' Zoids/ high speed",
+        "imgURL": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9d2f6092-5221-44ca-b727-2716f68fbd72/d2li17k-f1ec2e15-b43b-4f78-99a0-87d39289b1b1.jpg/v1/fill/w_900,h_755,q_75,strp/dying_zaber_fang_by_darkfang777.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi85ZDJmNjA5Mi01MjIxLTQ0Y2EtYjcyNy0yNzE2ZjY4ZmJkNzIvZDJsaTE3ay1mMWVjMmUxNS1iNDNiLTRmNzgtOTlhMC04N2QzOTI4OWIxYjEuanBnIiwid2lkdGgiOiI8PTkwMCIsImhlaWdodCI6Ijw9NzU1In1dXX0.yfmvYqoMO33KCjiAsn-YYhUEaJPlHLEdAfcWeUHZRV4",
+        "size": "L",
+        "length": "15.6m",
+        "weight": "78.0t",
+        "max_speed": "200 km/h",
+        "base zoid": "N/A",
+        "parts": ["Z Core ZN"],
+        "cost": "35,000G",
+        "base stats": {
+            "HP": 200,
+            "EP": 23,
+            "GEP": 3,
+            "SP": 200,
+            "MM": 75,
+            "IV": 500,
+            "DF": 20,
+            "AM": 60,
+            "DCP": 600,
+            "SR": 300,
+            "CLV": 6,
+            "TP": 0,
+            "CP": 40
+        },
+        "weapon rack": {
+            "[S]": "2Beam Cannon (Default Zaber Fang Weapon)",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "3 Shock C.",
+                "AT": "80",
+                "HR": "70%",
+                "TG": "1-2S",
+                "EP": "0"
+            },
+            {
+                "name": "20mmBm Gun",
+                "AT": "60",
+                "HR": "85%",
+                "TG": "1-2S",
+                "EP": "3"
+            },
+            {
+                "name": "Laser M. Gun",
+                "AT": "45",
+                "HR": "85%",
+                "TG": "1-1N",
+                "EP": "2"
+            },
+            {
+                "name": "Killer Saber",
+                "AT": "130",
+                "HR": "67%",
+                "TG": "1-1S",
+                "EP": "1"
+            }
         ]
     },
     {
         "id": 2,
-        "name": "Berserker Fury",
-        "type": "Tyrannosaurus",
-        "height": "12.3m",
-        "length": "22.7m",
-        "weight": "127 tons",
-        "max_speed": "340 km/h",
-        "weapons": [
-            "Buster Claw",
-            "Electron Fang",
-            "Charged Particle Cannon",
-            "AZ Beam Cannon"
-        ],
-        "equipment": [
-            "E-Shield Generator",
-            "Ion Booster Pack"
+        "name": "Zaber Fang",
+        "manufacturer": "Imperial Force",
+        "type": "Tiger",
+        "description": "Zaber Fang Old for Guylos",
+        "imgURL": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/24db93c4-ba8e-43ce-9806-8dbf89d9b826/d1fxi7u-6a68e371-7fa9-469f-8188-069b721dd197.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI0ZGI5M2M0LWJhOGUtNDNjZS05ODA2LThkYmY4OWQ5YjgyNlwvZDFmeGk3dS02YTY4ZTM3MS03ZmE5LTQ2OWYtODE4OC0wNjliNzIxZGQxOTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5QG5m5skilJeYup3E8_r0c8YNJixezv_0_IsPHHei3E",
+        "size": "L",
+        "length": "15.6m",
+        "weight": "78.0t",
+        "max_speed": "240 km/h",
+        "base zoid": "Zaber Fang Old",
+        "parts": [""],
+        "cost": "5,000G",
+        "base stats": {
+            "HP": 220,
+            "EP": 25,
+            "GEP": 3,
+            "SP": 240,
+            "MM": 75,
+            "IV": 640,
+            "DF": 30,
+            "AM": 65,
+            "DCP": 160,
+            "SR": 400,
+            "CLV": 8,
+            "TP": 0,
+            "CP": 40
+        },
+        "weapon rack": {
+            "[S]": "2Beam Cannon (Default Zaber Fang Weapon)",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "3 Shock C.",
+                "AT": "120",
+                "HR": "70%",
+                "TG": "1-2S",
+                "EP": "0"
+            },
+            {
+                "name": "20mmBm Gun",
+                "AT": "120",
+                "HR": "85%",
+                "TG": "1-2S",
+                "EP": "3"
+            },
+            {
+                "name": "Laser M. Gun",
+                "AT": "45",
+                "HR": "85%",
+                "TG": "1-1N",
+                "EP": "2"
+            },
+            {
+                "name": "Killer Saber",
+                "AT": "140",
+                "HR": "67%",
+                "TG": "1-1S",
+                "EP": "1"
+            }
         ]
     },
     {
         "id": 3,
-        "name": "Blitz Tiger",
+        "name": "Zaber Fang AT",
+        "manufacturer": "Imperial Force",
         "type": "Tiger",
-        "height": "14.0m",
-        "length": "26.0m",
-        "weight": "125 tons",
-        "max_speed": "320 km/h",
-        "weapons": [
-            "Crusher Sabre",
-            "Thunder Claw",
-            "Bolt Cannon",
-            "Energy Blades"
-        ],
-        "equipment": [
-            "Booster Unit"
+        "description": "Renovated Zaber Fang",
+        "imgURL": "https://theironbible.com/ZoidsAnime/ChaoticCentury/Zoids/Images/ZaberFangATG.jpg",
+        "size": "L",
+        "length": "15.8m",
+        "weight": "90.0t",
+        "max_speed": "250 km/h",
+        "base zoid": "Zaber Fang",
+        "parts": ["Assault U"],
+        "cost": "6,000G",
+        "base stats": {
+            "HP": 230,
+            "EP": 25,
+            "GEP": 3,
+            "SP": 250,
+            "MM": 75,
+            "IV": 650,
+            "DF": 35,
+            "AM": 65,
+            "DCP": 170,
+            "SR": 400,
+            "CLV": 10,
+            "TP": 0,
+            "CP": 40
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "3-Shock Gun",
+                "AT": "120",
+                "HR": "70%",
+                "TG": "1-2S",
+                "EP": "0"
+            },
+            {
+                "name": "8-Missle Pod",
+                "AT": "75",
+                "HR": "92%",
+                "TG": "1-3B",
+                "EP": "10"
+            },
+            {
+                "name": "Killer Saber",
+                "AT": "160",
+                "HR": "67%",
+                "TG": "1-1S",
+                "EP": "1"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Zaber Fang TS",
+        "manufacturer": "Republic Force",
+        "type": "Tiger",
+        "description": "Tiger Team's Vessel",
+        "imgURL": "https://theironbible.com/ZoidsAnime/ChaoticCentury/Zoids/Images/ZaberFangStinger.jpg",
+        "size": "L",
+        "length": "15.8m",
+        "weight": "90.0t",
+        "max_speed": "250 km/h",
+        "base zoid": "Zaber Fang",
+        "parts": ["Tiger Spir"],
+        "cost": "2,000G",
+        "base stats": {
+            "HP": 230,
+            "EP": 25,
+            "GEP": 3,
+            "SP": 250,
+            "MM": 75,
+            "IV": 650,
+            "DF": 40,
+            "AM": 65,
+            "DCP": 160,
+            "SR": 400,
+            "CLV": 8,
+            "TP": 0,
+            "CP": 40
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "3-Shock Gun",
+                "AT": "140",
+                "HR": "70%",
+                "TG": "1-2S",
+                "EP": "0"
+            },
+            {
+                "name": "SR Cannon",
+                "AT": "160",
+                "HR": "90%",
+                "TG": "1-2S",
+                "EP": "2"
+            },
+            {
+                "name": "Killer Saber",
+                "AT": "160",
+                "HR": "67%",
+                "TG": "1-1S",
+                "EP": "1"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Proto Zaber",
+        "manufacturer": "Republic Force",
+        "type": "Tiger",
+        "description": "Prototype of CAS Research Team",
+        "imgURL": "https://img1.yeggi.com/page_images_cache/3414958_proto-zaber-v2-by-zoids-zeke",
+        "size": "L",
+        "length": "15.6m",
+        "weight": "75.0t",
+        "max_speed": "245 km/h",
+        "base zoid": "Zaber Fang",
+        "parts": [""],
+        "cost": "18,000G",
+        "base stats": {
+            "HP": 260,
+            "EP": 30,
+            "GEP": 3,
+            "SP": 250,
+            "MM": 75,
+            "IV": 550,
+            "DF": 50,
+            "AM": 60,
+            "DCP": 210,
+            "SR": 300,
+            "CLV": 13,
+            "TP": 0,
+            "CP": 30
+        },
+        "weapon rack": {
+            "[S]": "2Beam Cannon (Default Zaber Fang Weapon)",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "3-Impact Cannon",
+                "AT": "170",
+                "HR": "85%",
+                "TG": "1-2S",
+                "EP": "0"
+            },
+            {
+                "name": "Linear Laser Gun",
+                "AT": "100",
+                "HR": "88%",
+                "TG": "1-3V",
+                "EP": "8"
+            },
+            {
+                "name": "SR Vulcan Cannon",
+                "AT": "80",
+                "HR": "85%",
+                "TG": "1-1S",
+                "EP": "1"
+            },
+            {
+                "name": "Killer Saber",
+                "AT": "180",
+                "HR": "87%",
+                "TG": "1-1S",
+                "EP": "1"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Attack Kat",
+        "manufacturer": "Imperial Force",
+        "type": "Tiger",
+        "description": "Runs in forests/mountains",
+        "imgURL": "https://static.wikia.nocookie.net/zoids/images/1/13/D1983032018.jpg/revision/latest?cb=20081214045405",
+        "size": "S",
+        "length": "13.2m",
+        "weight": "24.0t",
+        "max_speed": "190 km/h",
+        "base zoid": "",
+        "parts": ["Z Core ZN"],
+        "cost": "20,000G",
+        "base stats": {
+            "HP": 100,
+            "EP": 15,
+            "GEP": 2,
+            "SP": 190,
+            "MM": 80,
+            "IV": 1990,
+            "DF": 18,
+            "AM": 50,
+            "DCP": 60,
+            "SR": 1800,
+            "CLV": 7,
+            "TP": 0,
+            "CP": 20
+        },
+        "weapon rack": {
+            "[S]": "2Beam Cannon (Default Hell Cat Weapon)",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "Laser M. Gun",
+                "AT": "30",
+                "HR": "85%",
+                "TG": "1-1N",
+                "EP": "2"
+            },
+            {
+                "name": "Optical Camoflague",
+                "EVA": "+50",
+                "TG": "Self",
+                "EP": "3"
+            },
+            {
+                "name": "Go 4 Broke",
+                "AT": "60",
+                "HR": "65%",
+                "TG": "1-1S",
+                "EP": "1"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Liger Zero",
+        "manufacturer": "Repbulic Force",
+        "type": "Liger",
+        "description": "Changes according to mounted parts",
+        "imgURL": "https://i.pinimg.com/564x/3f/fd/8e/3ffd8e051bbb90686135576ec413c21a.jpg",
+        "size": "L",
+        "length": "24.0m",
+        "weight": "85.0t",
+        "max_speed": "307 km/h",
+        "base zoid": "",
+        "parts": ["Z Core UX", "Wild Z Data"],
+        "cost": "75,000G",
+        "base stats": {
+            "HP": 260,
+            "EP": 35,
+            "GEP": 3,
+            "SP": 307,
+            "MM": 75,
+            "IV": 657,
+            "DF": 55,
+            "AM": 65,
+            "DCP": 210,
+            "SR": 350,
+            "CLV": 15,
+            "TP": 0,
+            "CP": 40
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "Shock Cannon",
+                "AT": "160",
+                "HR": "75%",
+                "TG": "1-2S",
+                "EP": "0"
+            },
+            {
+                "name": "Ion Booster",
+                "SP": "+300",
+                "TG": "Self",
+                "EP": "1"
+            },
+            {
+                "name": "Strike Laster Claws",
+                "AT": "240",
+                "HR": "75%",
+                "TG": "1-1S",
+                "EP": "3"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Zero Jaeger",
+        "manufacturer": "Repbulic Force",
+        "type": "Liger",
+        "description": "For high-speed combats",
+        "imgURL": "https://i.pinimg.com/564x/15/c5/dd/15c5dd481ce7045476369aaf1bae795d.jpg",
+        "size": "L",
+        "length": "24.1m",
+        "weight": "132.0t",
+        "max_speed": "330 km/h",
+        "base zoid": "Liger Zero",
+        "parts": ["Jaeger U"],
+        "cost": "15,000G",
+        "base stats": {
+            "HP": 280,
+            "EP": 35,
+            "GEP": 3,
+            "SP": 330,
+            "MM": 90,
+            "IV": 830,
+            "DF": 55,
+            "AM": 70,
+            "DCP": 240,
+            "SR": 500,
+            "CLV": 17,
+            "TP": 0,
+            "CP": 30
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "Shock Cannon",
+                "AT": "160",
+                "HR": "75%",
+                "TG": "1-2S",
+                "EP": "0"
+            },
+            {
+                "name": "Vulcan Pod",
+                "AT": "95",
+                "HR": "85%",
+                "TG": "1-3V",
+                "EP": "2"
+            },
+            {
+                "name": "Ion Booster",
+                "SP": "+500",
+                "TG": "Self",
+                "EP": "2"
+            },
+            {
+                "name": "Strike Laster Claws",
+                "AT": "240",
+                "HR": "75%",
+                "TG": "1-1S",
+                "EP": "3"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Zero Schneider",
+        "manufacturer": "Repbulic Force",
+        "type": "Liger",
+        "description": "Liger Zero's reinforcement parts",
+        "imgURL": "https://i.pinimg.com/564x/d7/f2/e4/d7f2e4e59e691978cc4168cebce085d6.jpg",
+        "size": "L",
+        "length": "24.1m",
+        "weight": "135.0t",
+        "max_speed": "310 km/h",
+        "base zoid": "Liger Zero",
+        "parts": ["Schneider U"],
+        "cost": "15,000G",
+        "base stats": {
+            "HP": 290,
+            "EP": 35,
+            "GEP": 2,
+            "SP": 310,
+            "MM": 80,
+            "IV": 710,
+            "DF": 65,
+            "AM": 70,
+            "DCP": 230,
+            "SR": 400,
+            "CLV": 17,
+            "TP": 0,
+            "CP": 30
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "Shock Cannon",
+                "AT": "160",
+                "HR": "75%",
+                "TG": "1-2S",
+                "EP": "0"
+            },
+            {
+                "name": "5 Blades",
+                "AT": "400",
+                "HR": "50%",
+                "TG": "1-1S",
+                "EP": "30"
+            },
+            {
+                "name": "E-Shield",
+                "Eshld": "200",
+                "TG": "Self",
+                "EP": "3"
+            },
+            {
+                "name": "Laser Blades",
+                "AT": "270",
+                "HR": "70%",
+                "TG": "1-1S",
+                "EP": "6"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Zero Panzer",
+        "manufacturer": "Repbulic Force",
+        "type": "Liger",
+        "description": "For bombardments",
+        "imgURL": "https://static.wikia.nocookie.net/zoids/images/d/de/LigerZeroPanzer.jpg/revision/latest?cb=20090926221146",
+        "size": "L",
+        "length": "23.3m",
+        "weight": "145.0t",
+        "max_speed": "285 km/h",
+        "base zoid": "Liger Zero",
+        "parts": ["Panzer U"],
+        "cost": "20,000G",
+        "base stats": {
+            "HP": 300,
+            "EP": 35,
+            "GEP": 2,
+            "SP": 285,
+            "MM": 75,
+            "IV": 485,
+            "DF": 80,
+            "AM": 80,
+            "DCP": 250,
+            "SR": 200,
+            "CLV": 20,
+            "TP": 0,
+            "CP": 30
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "Grenade Launcher",
+                "AT": "200",
+                "HR": "90%",
+                "TG": "1-2S",
+                "EP": "0"
+            },
+            {
+                "name": "Hybrid Cannons",
+                "AT": "250",
+                "HR": "90%",
+                "TG": "1-3B",
+                "EP": "20"
+            },
+            {
+                "name": "Big Bang Attack",
+                "AT": "300",
+                "HR": "90%",
+                "TG": "1-3B",
+                "EP": "25"
+            },
+            {
+                "name": "Strike Laser Claws",
+                "AT": "240",
+                "HR": "60%",
+                "TG": "1-1S",
+                "EP": "3"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Berserk Fury",
+        "manufacturer": "Imperial Force",
+        "type": "Fury Type",
+        "description": "Imperials response to the Liger Zero",
+        "imgURL": "https://static.wikia.nocookie.net/zoids/images/5/57/Berserk_Fury.JPG/revision/latest/scale-to-width-down/300?cb=20080619141246",
+        "size": "L",
+        "length": "22.7m",
+        "weight": "127.0t",
+        "max_speed": "340 km/h",
+        "base zoid": "Beserk Fury",
+        "parts": ["Z Core UX", "Wild Z Data"],
+        "cost": "150,000G",
+        "base stats": {
+            "HP": 380,
+            "EP": 40,
+            "GEP": 5,
+            "SP": 340,
+            "MM": 70,
+            "IV": 790,
+            "DF": 100,
+            "AM": 70,
+            "DCP": 330,
+            "SR": 450,
+            "CLV": 20,
+            "TP": 0,
+            "CP": 45
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "Buster Claw",
+                "AT": "280",
+                "HR": "60%",
+                "TG": "1-1S",
+                "EP": "6"
+            },
+            {
+                "name": "Diffuse P.",
+                "AT": "250",
+                "HR": "85%",
+                "TG": "1-3A",
+                "EP": "25"
+            },
+            {
+                "name": "E-Shield",
+                "Eshld": "400",
+                "TG": "Self",
+                "EP": "5"
+            },
+            {
+                "name": "Strike Laser Claws",
+                "AT": "230",
+                "HR": "75%",
+                "TG": "1-1S",
+                "EP": "3"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Strum Fury",
+        "manufacturer": "Imperial Force",
+        "type": "Fury Type",
+        "description": "Berserk Fury's armor for combat",
+        "imgURL": "https://preview.redd.it/g8x5m6mrzsb71.jpg?width=960&crop=smart&auto=webp&s=6a7de92880255930ec2b97d6691c863a41e43941",
+        "size": "L",
+        "length": "22.7m",
+        "weight": "134.0t",
+        "max_speed": "360 km/h",
+        "base zoid": "",
+        "parts": ["Strum Unit"],
+        "cost": "10,000G",
+        "base stats": {
+            "HP": 420,
+            "EP": 40,
+            "GEP": 5,
+            "SP": 360,
+            "MM": 75,
+            "IV": 810,
+            "DF": 130,
+            "AM": 75,
+            "DCP": 390,
+            "SR": 450,
+            "CLV": 23,
+            "TP": 0,
+            "CP": 40
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "X Breaker",
+                "AT": "360",
+                "HR": "60%",
+                "TG": "1-1S",
+                "EP": "8"
+            },
+            {
+                "name": "Diffuse P.",
+                "AT": "250",
+                "HR": "85%",
+                "TG": "1-3A",
+                "EP": "25"
+            },
+            {
+                "name": "Strike Laser Claws",
+                "AT": "250",
+                "HR": "75%",
+                "TG": "1-1S",
+                "EP": "3"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Jagd Fury",
+        "manufacturer": "Imperial Force",
+        "type": "Fury Type",
+        "description": "Berserk Fury's armor/ bombardment",
+        "imgURL": "https://64.media.tumblr.com/8b55c2c0d3c9d694fe6ddc1eabebbe22/tumblr_p04znlyo1n1w256muo1_500.jpg",
+        "size": "L",
+        "length": "22.7m",
+        "weight": "156.0t",
+        "max_speed": "290 km/h",
+        "base zoid": "Berserk Fury",
+        "parts": ["Jagd Unit"],
+        "cost": "10,000G",
+        "base stats": {
+            "HP": 420,
+            "EP": 40,
+            "GEP": 5,
+            "SP": 290,
+            "MM": 65,
+            "IV": 740,
+            "DF": 130,
+            "AM": 80,
+            "DCP": 320,
+            "SR": 450,
+            "CLV": 24,
+            "TP": 0,
+            "CP": 40
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "LR Cannon",
+                "AT": "350",
+                "HR": "60%",
+                "TG": "2-3S",
+                "EP": "10"
+            },
+            {
+                "name": "Diffuse P.",
+                "AT": "250",
+                "HR": "85%",
+                "TG": "1-3A",
+                "EP": "25"
+            },
+            {
+                "name":"Missle Pod",
+                "AT": "170",
+                "HR": "90%",
+                "TG": "1-3B",
+                "EP": "15"
+            },
+            {
+                "name": "Strike Laser Claws",
+                "AT": "210",
+                "HR": "75%",
+                "TG": "1-1S",
+                "EP": "3"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Beserk Fury Z",
+        "manufacturer": "Imperial Force",
+        "type": "Fury Type",
+        "description": "Berserk Fury. w/ high mobility",
+        "imgURL": "https://64.media.tumblr.com/850d36b9739f80168295556752aa0635/336f681803bc8702-b2/s540x810/341e9c1f87f9ffaa634f6341bee34cbc6371ad50.jpg",
+        "size": "L",
+        "length": "22.7m",
+        "weight": "125.0t",
+        "max_speed": "600 km/h",
+        "base zoid": "Berserk Fury",
+        "parts": ["ZF Unit"],
+        "cost": "50,000G",
+        "base stats": {
+            "HP": 530,
+            "EP": 50,
+            "GEP": 20,
+            "SP": 600,
+            "MM": 80,
+            "IV": 100,
+            "DF": 150,
+            "AM": 75,
+            "DCP": 500,
+            "SR": 500,
+            "CLV": 28,
+            "TP": 0,
+            "CP": 50
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "12-Missle Pod",
+                "AT": "240",
+                "HR": "90%",
+                "TG": "1-3B",
+                "EP": "10"
+            },
+            {
+                "name": "Diffuse P.",
+                "AT": "250",
+                "HR": "85%",
+                "TG": "1-3A",
+                "EP": "25"
+            },
+            {
+                "name": "Strike Laser Claws",
+                "AT": "350",
+                "HR": "75%",
+                "TG": "1-1S",
+                "EP": "10"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Redler",
+        "manufacturer": "Imperial Force",
+        "type": "Fury Type",
+        "description": "Air-battle dragon",
+        "imgURL": "https://theironbible.com/ZoidsAnime/ChaoticCentury/EpisodeSummaries.php/Images/Episode2/24.jpg",
+        "size": "M",
+        "length": "17m",
+        "weight": "36.0t",
+        "max_speed": "3430 km/h",
+        "base zoid": "",
+        "parts": ["Z Core FL"],
+        "cost": "10,000G",
+        "base stats": {
+            "HP": 80,
+            "EP": 15,
+            "GEP": 2,
+            "SP": 3000,
+            "MM": 10,
+            "IV": 3300,
+            "DF": 18,
+            "AM": 30,
+            "DCP": 60,
+            "SR": 300,
+            "CLV": 5,
+            "TP": 0,
+            "CP": 20
+        },
+        "weapon rack": {
+            "[S]": "",
+            "[OA1]": "",
+            "[OA2]": "",
+            "[A]": ""
+        },
+        "base weapons": [
+            {
+                "name": "Laser Blade",
+                "AT": "75",
+                "HR": "70%",
+                "TG": "1-1S",
+                "EP": "3"
+            },
+            {
+                "name": "Strike Laser",
+                "AT": "50",
+                "HR": "75%",
+                "TG": "1-1S",
+                "EP": "0"
+            }
         ]
     }
 ]
