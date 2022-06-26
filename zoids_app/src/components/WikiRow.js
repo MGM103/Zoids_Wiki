@@ -5,8 +5,8 @@ const WikiRow = ({zoids, onSelect}) => (
     <tr>
       <td>{zoids.name}</td>
       <td>{zoids.type}</td>
-      <td>{zoids.max_speed}</td>
-      <td>{zoids.weapons.join(", ")}</td>
+      <td>{zoids.manufacturer}</td>
+      <td>{zoids.description}</td>
       <td>
         <button onClick={() => onSelect(zoids)}>Select</button>
       </td>
@@ -17,8 +17,8 @@ const WikiRow = ({zoids, onSelect}) => (
     zoids: PropTypes.shape({
       name: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
-      max_speed: PropTypes.string.isRequired,
-      weapons: PropTypes.arrayOf(PropTypes.string.isRequired),
+      manufacturer: PropTypes.string.isRequired,
+      description:  PropTypes.string.isRequired,
     }),
     onSelect: PropTypes.func.isRequired
   };

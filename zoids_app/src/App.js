@@ -10,7 +10,7 @@ import ZoidInfo from './components/ZoidInfo'
 function App() {
   const [search, setSearch] = useState("");
   const [selectedZoid, setSelectedZoid] = useState(null);
-
+  
   return (
     <div style={{
       margin: 'auto',
@@ -32,8 +32,8 @@ function App() {
                 <tr>
                   <th> Name </th>
                   <th> Type </th>
-                  <th> Max Speed </th>
-                  <th> Weapons </th>
+                  <th> Manufacturer </th>
+                  <th> Description </th>
                 </tr>
               </thead>
               <tbody>

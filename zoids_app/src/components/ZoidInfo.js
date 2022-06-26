@@ -1,44 +1,50 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-const ZoidInfo = ({name, height, length, weight, max_speed, type, weapons, equipment}) => (
+//Importing Components
+import ZoidSpecs from './ZoidSpecs';
+import BuldInfo from './BuildInfo';
+import ZoidBaseStats from './ZoidBaseStats';
+import ZoidBaseWeapons from './ZoidBaseWeaponRow';
+
+const ZoidInfo = ({name, type, manufacturer, description, imgURL, specs, build_info, base_stats, base_weapons}) => (
     <div>
-      <h3>{name}</h3>
+      <h2>{name}</h2>
+      <img alt='' src={imgURL} />
+      <h3>Overview</h3>
       <ul>
         <li>{type}</li>
-        <li>{max_speed}</li>
-        <li>{height}</li>
-        <li>{length}</li>
-        <li>{weight}</li>
-        <li>Weapons</li>
-        <ol>
-          {
-            weapons.map(
-              weapons => <li key={weapons}>{weapons}</li>
-            )
-          }
-        </ol>
-        <li>Equipment</li>
-        <ol>
-          {
-            equipment.map(
-              equipment => <li key={equipment}> {equipment}</li>
-            )
-          }
-        </ol>
+        <li>{manufacturer}</li>
+        <li>{description}</li>
       </ul>
+      <ZoidSpecs specs={specs} />
+      <BuldInfo build_info={build_info} />
+      <ZoidBaseStats base_stats={base_stats} />
+      <h3>Base Weapons</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Damage</th>
+            <th>Target</th>
+            <th>EP</th>
+          </tr>
+        </thead>
+        <tbody>
+          {base_weapons.map(base_weapons => (
+            <ZoidBaseWeapons base_weapons={base_weapons} key={base_weapons.name} />
+          ))}
+        </tbody>
+      </table>
     </div>
 )
 
 ZoidInfo.propTypes = {
   name: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
-  length: PropTypes.string.isRequired,
-  weight: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  max_speed: PropTypes.string.isRequired,
-  weapons: PropTypes.arrayOf(PropTypes.string.isRequired),
-  equipment: PropTypes.arrayOf(PropTypes.string.isRequired),
+  manufacturer: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  imgURL: PropTypes.string.isRequired
 }
 
 export default ZoidInfo;
