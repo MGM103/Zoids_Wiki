@@ -5,6 +5,12 @@ import './App.css';
 import WikiRow from './components/WikiRow';
 import ZoidInfo from './components/ZoidInfo'
 
+//Style
+import AppTitle from './components/styled_components/AppTitle'
+import AppContainerDiv from './components/styled_components/AppContainerDiv';
+import AppContentDiv from './components/styled_components/AppContentDiv';
+import AppInputField from './components/styled_components/AppInputField';
+
 function App() {
   const [zoids, setZoids] = useState([]);
   const [search, setSearch] = useState("");
@@ -20,18 +26,11 @@ function App() {
   }, []);
   
   return (
-    <div style={{
-      margin: 'auto',
-      width: 800,
-      paddingTop: "1rem",
-    }}>
-        <h1 className="title"> Zoids Wiki</h1>
-        <div style={{
-          display: 'grid',
-          gridColumnGap: "1rem"
-        }}>
+    <AppContainerDiv>
+        <AppTitle>Zoids Wiki</AppTitle>
+        <AppContentDiv>
           <div>
-            <input 
+            <AppInputField
               value={search}
               onChange={(evnt) => setSearch(evnt.target.value)}
             />
@@ -55,8 +54,8 @@ function App() {
             </table>
           </div>
           {selectedZoid && <ZoidInfo {...selectedZoid} />}
-        </div>
-    </div>
+        </AppContentDiv>
+    </AppContainerDiv>
   );
 }
 
