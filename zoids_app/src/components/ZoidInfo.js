@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from "prop-types";
+import React, {useContext} from 'react';
 import {List, ListItem, Grid, TableContainer, Table, TableHead, TableBody, TableRow, TableCell} from '@mui/material';
 
 import './component_style/ZoidInfo.css';
@@ -9,8 +8,12 @@ import ZoidSpecs from './ZoidSpecs';
 import BuldInfo from './BuildInfo';
 import ZoidBaseStats from './ZoidBaseStats';
 import ZoidBaseWeapons from './ZoidBaseWeaponRow';
+import ZoidsContext from '../ZoidsContext';
 
-const ZoidInfo = ({name, type, manufacturer, description, imgURL, specs, build_info, base_stats, base_weapons}) => (
+const ZoidInfo = () => {
+  const {selectedZoid: {name, type, manufacturer, description, imgURL, specs, build_info, base_stats, base_weapons}} = useContext(ZoidsContext);
+
+  return(
     <div>
       <Grid container spacing={0.5} sx={{paddingBottom: "2rem"}}>
         <Grid item={true} xs={12}>
@@ -53,14 +56,7 @@ const ZoidInfo = ({name, type, manufacturer, description, imgURL, specs, build_i
         </Grid>
       </Grid>
     </div>
-)
-
-ZoidInfo.propTypes = {
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  manufacturer: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  imgURL: PropTypes.string.isRequired
+  )
 }
 
 export default ZoidInfo;
