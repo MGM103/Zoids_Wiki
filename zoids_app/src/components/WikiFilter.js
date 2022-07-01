@@ -9,12 +9,18 @@ const AppInputField = styled.input`
 `;
 
 const WikiFilter = () => {
-    const {search, setSearch} = useContext(ZoidsContext)
+    const {
+        state: {search}, 
+        dispatch
+    } = useContext(ZoidsContext);
 
     return(
         <AppInputField
             value={search}
-            onChange={(evnt) => setSearch(evnt.target.value)}
+            onChange={(evnt) => dispatch({
+                action: 'SET_SEARCH', 
+                payload: evnt.target.value
+            })}
         />
     )
 };

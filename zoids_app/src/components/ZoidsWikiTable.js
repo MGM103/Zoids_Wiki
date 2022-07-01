@@ -3,7 +3,10 @@ import ZoidsContext from '../ZoidsContext';
 import WikiRow from './WikiRow';
 
 const ZoidsWikiTable = () => {
-  const {zoids, search, setSelectedZoid} = useContext(ZoidsContext)
+  const {
+    state: {zoids, search},
+    dispatch
+  } = useContext(ZoidsContext)
 
   return(
     <table width="100%">
@@ -19,7 +22,10 @@ const ZoidsWikiTable = () => {
         {zoids
           .filter((zoids) => zoids.name.toLowerCase().includes(search.toLowerCase()))
           .map((zoids) => (
-            <WikiRow zoids={zoids} key={zoids.id} onSelect={() => setSelectedZoid(zoids)} />
+            <WikiRow zoids={zoids} key={zoids.id} onSelect={() => dispatch({
+              action: 'SET_SELECTED_ZOID',
+              payload: zoids
+            })} />
           ))
         }
       </tbody>

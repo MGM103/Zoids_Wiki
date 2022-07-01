@@ -11,28 +11,28 @@ import ZoidBaseWeapons from './ZoidBaseWeaponRow';
 import ZoidsContext from '../ZoidsContext';
 
 const ZoidInfo = () => {
-  const {selectedZoid: {name, type, manufacturer, description, imgURL, specs, build_info, base_stats, base_weapons}} = useContext(ZoidsContext);
+  const {state: {selectedZoid}} = useContext(ZoidsContext);
 
-  return(
+  return selectedZoid ? (
     <div>
       <Grid container spacing={0.5} sx={{paddingBottom: "2rem"}}>
         <Grid item={true} xs={12}>
-          <h2>{name}</h2>
-          <img alt='' src={imgURL} />
+          <h2>{selectedZoid.name}</h2>
+          <img alt='' src={selectedZoid.imgURL} />
           <h3>Overview</h3>
           <List>
-            <ListItem dense={true}>{`${type} - ${manufacturer}`}</ListItem>
-            <ListItem dense={true}>{description}</ListItem>
+            <ListItem dense={true}>{`${selectedZoid.type} - ${selectedZoid.manufacturer}`}</ListItem>
+            <ListItem dense={true}>{selectedZoid.description}</ListItem>
           </List>
         </Grid>
         <Grid item={true} xs={6}>
-          <ZoidSpecs specs={specs} />
+          <ZoidSpecs specs={selectedZoid.specs} />
         </Grid>
         <Grid item={true} xs={6}>
-          <BuldInfo build_info={build_info} />
+          <BuldInfo build_info={selectedZoid.build_info} />
         </Grid>
         <Grid item={true} xs={6}>
-          <ZoidBaseStats base_stats={base_stats} />
+          <ZoidBaseStats base_stats={selectedZoid.base_stats} />
         </Grid>
         <Grid item={true} xs={6}>
           <h3>Base Weapons</h3>
@@ -47,7 +47,7 @@ const ZoidInfo = () => {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {base_weapons.map(base_weapons => (
+                {selectedZoid.base_weapons.map(base_weapons => (
                   <ZoidBaseWeapons base_weapons={base_weapons} key={base_weapons.name} />
                 ))}
               </TableBody>
@@ -56,7 +56,7 @@ const ZoidInfo = () => {
         </Grid>
       </Grid>
     </div>
-  )
+  ) : null;
 }
 
 export default ZoidInfo;
