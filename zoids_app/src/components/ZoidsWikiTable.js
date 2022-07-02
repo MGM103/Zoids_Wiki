@@ -1,12 +1,11 @@
-import React, {useContext} from 'react';
-import ZoidsContext from '../ZoidsContext';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import WikiRow from './WikiRow';
 
 const ZoidsWikiTable = () => {
-  const {
-    state: {zoids, search},
-    dispatch
-  } = useContext(ZoidsContext)
+  const dispatch = useDispatch();
+  const zoids = useSelector(state => state.zoids);
+  const search = useSelector(state => state.search);
 
   return(
     <table width="100%">
@@ -23,7 +22,7 @@ const ZoidsWikiTable = () => {
           .filter((zoids) => zoids.name.toLowerCase().includes(search.toLowerCase()))
           .map((zoids) => (
             <WikiRow zoids={zoids} key={zoids.id} onSelect={() => dispatch({
-              action: 'SET_SELECTED_ZOID',
+              type: 'SET_SELECTED_ZOID',
               payload: zoids
             })} />
           ))

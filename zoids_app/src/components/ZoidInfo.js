@@ -1,4 +1,5 @@
-import React, {useContext} from 'react';
+import React from 'react';
+import {useSelector} from 'react-redux';
 import {List, ListItem, Grid, TableContainer, Table, TableHead, TableBody, TableRow, TableCell} from '@mui/material';
 
 import './component_style/ZoidInfo.css';
@@ -8,10 +9,9 @@ import ZoidSpecs from './ZoidSpecs';
 import BuldInfo from './BuildInfo';
 import ZoidBaseStats from './ZoidBaseStats';
 import ZoidBaseWeapons from './ZoidBaseWeaponRow';
-import ZoidsContext from '../ZoidsContext';
 
 const ZoidInfo = () => {
-  const {state: {selectedZoid}} = useContext(ZoidsContext);
+  const selectedZoid = useSelector(state => state.selectedZoid);
 
   return selectedZoid ? (
     <div>

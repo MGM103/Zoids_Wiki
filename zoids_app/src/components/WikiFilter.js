@@ -1,6 +1,6 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import styled from '@emotion/styled';
-import ZoidsContext from '../ZoidsContext';
+import { useDispatch, useSelector } from 'react-redux';
 
 const AppInputField = styled.input`
     width: 100%;
@@ -9,16 +9,14 @@ const AppInputField = styled.input`
 `;
 
 const WikiFilter = () => {
-    const {
-        state: {search}, 
-        dispatch
-    } = useContext(ZoidsContext);
+    const dispatch = useDispatch();
+    const search = useSelector(state => state.search);
 
     return(
         <AppInputField
             value={search}
             onChange={(evnt) => dispatch({
-                action: 'SET_SEARCH', 
+                type: 'SET_SEARCH', 
                 payload: evnt.target.value
             })}
         />

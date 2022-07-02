@@ -1,8 +1,6 @@
-import React, {useState, useEffect, useReducer} from 'react';
-import './App.css';
-
-//Context
-import ZoidsContext from './ZoidsContext';
+import React, {useEffect} from 'react';
+import {createStore} from 'redux';
+import {Provider, useDispatch, useSelector} from 'react-redux';
 
 //Components
 import WikiFilter from './components/WikiFilter';
@@ -13,12 +11,17 @@ import ZoidsWikiTable from './components/ZoidsWikiTable';
 import AppTitle from './components/styled_components/AppTitle'
 import AppContainerDiv from './components/styled_components/AppContainerDiv';
 import AppContentDiv from './components/styled_components/AppContentDiv';
+import './App.css';
 
-//The state is the current state of the store i.e. it holds the variables in the react hook,
-//zoids, selectedZoid & search
-//Action is an object that defines the mutations that can be made to the state and the new state is returned
-const zoidsReducer = (state, {action, payload}) => {
-  switch(action) {
+const zoidsReducer = (
+  state = {
+    search: "",
+    zoids: [],
+    selectedZoid: null,
+  }, 
+  {type, payload}
+) => {
+  switch(type) {
     case "SET_SEARCH":
       return {
         ...state,
@@ -35,16 +38,15 @@ const zoidsReducer = (state, {action, payload}) => {
         selectedZoid: payload,
       };
     default: 
-      throw new Error("No action");
+      return state;
   }
 };
 
+const store = createStore(zoidsReducer);
+
 function App() {
-  const [state, dispatch] = useReducer(zoidsReducer, {
-    search: "",
-    zoids: [],
-    selectedZoid: null,
-  });
+  const dispatch = useDispatch();
+  const zoids = useSelector(state => state.zoids);
 
   useEffect(() => {
     console.log("Ran use Effect")
@@ -53,7 +55,7 @@ function App() {
       .then((response) => response.json())
       .then((payload) => dispatch(
         {
-          action: 'SET_ZOIDS',
+          type: "SET_ZOIDS",
           payload
         })
       )
@@ -61,12 +63,6 @@ function App() {
   }, []);
   
   return (
-    <ZoidsContext.Provider
-      value={{
-        state,
-        dispatch
-      }}
-    >
       <AppContainerDiv>
           <AppTitle>Zoids Wiki</AppTitle>
           <AppContentDiv>
@@ -77,8 +73,11 @@ function App() {
             <ZoidInfo />
           </AppContentDiv>
       </AppContainerDiv>
-    </ZoidsContext.Provider>
   );
 }
 
-export default App;
+export default () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
